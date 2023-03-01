@@ -1,3 +1,3 @@
 # Garcia-Burgers
-Garcia Burgers es una hamburgueseria ficticia hecha en html y css
+Garcia Burgers is a fictional burger joint made in html and css
 URL: https://garcia-burgers.onrender.com
