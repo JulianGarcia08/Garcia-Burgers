@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url(img/background_body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+}
+
+.header__start{
+    display: flex;
+    align-items: center;
+}
+
+.header__start img{
+    height: 10rem;
+}
+
+.header__start h2{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header__nav a:hover{
+    text-decoration: overline;
+}
+
+.main__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main__text h1{
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.section__menu{
+    background-image: url(img/background_menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu__card{
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 50px 50px 20px 20px;
+    cursor: pointer;
+    margin: 5rem;
+}
+
+.menu__card img{
+    width: 20rem;
+    height: 18rem;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.menu__card h3{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section__contacto{
+    background-image: url(img/background_contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contacto__card{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 50px;
+    width: 30rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__card h2{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+@media (max-width:1300px){
+    .header__container{
+        flex-direction: column;
+    }
+
+    .header__start{
+        flex-direction: column;
+    }
+
+    .header__start h2{
+        margin-bottom: 1rem;
+    }
+
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .header__nav a{
+        margin: 0.700rem;
+    }
+
+    .main__text{
+        height: 140vh;
+    }
+
+    .main__text h1{
+        font-size: 2.5rem;
+    }
+
+    .menu__container{
+        flex-direction: column;
+        height: 270vh;
+    }
+
+    .contacto__container{
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .contacto__card{
+        width: 15rem;
+    }
+
+    .contacto__card h2{
+        font-size: 2rem;
+    }
+
+    iframe{
+        width: 15rem;
+        border-radius: 50px;
+    }
+}
